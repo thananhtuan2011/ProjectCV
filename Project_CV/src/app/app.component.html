@@ -1,5 +1,22 @@
 <div class="wrapper">
-  <app-content></app-content>
-  <app-sidebar></app-sidebar>
+
+
+</div>
+<div class="sidebar-container">
+  <div (click)="snav.toggle()" style="position: absolute;top:0;z-index: 99999999; cursor: pointer;" color="primary"
+    class="sidebar-toolbar">
+    <mat-icon style="color: aliceblue;" *ngIf="snav.opened">menu</mat-icon>
+    <mat-icon *ngIf="!snav.opened">menu</mat-icon>
+
+  </div>
+
+  <mat-sidenav-container class="sidebar-sidenav-container">
+    <mat-sidenav #snav mode="side" fixedTopGap="56" opened="true">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content class="router-container">
+      <app-content></app-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
 <!--<app-footer></app-footer>-->

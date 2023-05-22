@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,13 +12,13 @@ export class SidebarComponent implements OnInit {
   contactDetails: any;
 
   constructor() {
-    this.myName = 'Abdo Hamoud';
+    this.myName = 'Thân Anh Tuấn';
     this.myJob = 'Full Stack Developer';
     this.contactDetails = {
-      phone: '+201011606782',
-      email: 'abdo.host@gmail.com',
-      behance: 'https://www.behance.net/Abdo-Host',
-      github: 'https://github.com/abdo-host',
+      phone: '0962934127',
+      email: 'thananhtuan2011@gmail.com',
+      facebook: 'https://www.facebook.com/iwehiop/',
+      github: 'https://github.com/thananhtuan2011',
       stackoverflow: 'https://stackoverflow.com/users/2262856/abdo-host',
       linkedin: 'https://www.linkedin.com/in/abdohost',
       twitter: 'https://twitter.com/Abdo_Host'

@@ -1,4 +1,6 @@
 @import "assets/scss/mixins";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -9,7 +11,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 

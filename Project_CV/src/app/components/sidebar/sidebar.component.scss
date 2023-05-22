@@ -2,11 +2,12 @@
 
 .sidebar-wrapper {
   background: #ef4b4b;
-  position: absolute;
+  // position: absolute;
   left: 0px;
   top: 0px;
-  width: 300px;
+  width: 350px;
   height: 100%;
+  overflow: hidden;
   min-height: 800px;
   color: #fff;
 
@@ -47,7 +48,9 @@
   }
 
   .contact-list {
-    .fab, .fas {
+
+    .fab,
+    .fas {
       margin-right: 5px;
       font-size: 18px;
       vertical-align: middle;
@@ -69,7 +72,8 @@
   }
 
   .container-block {
-    padding: 30px;
+    padding: 15px 15px 15px 25px;
+    font-size: 16px;
   }
 
   .container-block-title {
@@ -112,7 +116,7 @@
 
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
+      // color: rgba(256, 256, 256, 0.6);
     }
   }
 

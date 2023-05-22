@@ -10,7 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
 import { OrderbyPipe } from './pipes/orderby/orderby.pipe';
 import { MaterialModule } from './material.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +22,7 @@ import { MaterialModule } from './material.module';
   imports: [
     BrowserModule,
     MaterialModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     HttpClientJsonpModule,
     NgxPaginationModule
