@@ -1,18 +1,23 @@
-import {Component, OnInit} from '@angular/core';
-import {BehanceService} from '../../services/behance.service';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { BehanceService } from '../../services/behance.service';
+import { MatDialog } from '@angular/material/dialog';
+import { PreviewVideoComponent } from '../preview-video/preview-video.component';
+import { ModalService } from '../_model/modal.service';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.scss']
+  styleUrls: ['./content.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContentComponent implements OnInit {
 
   experiences: any[];
   portfolio: any;
   p = 1;
+  urlactive: string;
 
-  constructor(private behance: BehanceService) {
+  constructor(private dialog: MatDialog, private modalService: ModalService, private changeDetectorRefs: ChangeDetectorRef,) {
     this.experiences = [
       {
         title: 'Founder',
@@ -59,16 +64,68 @@ export class ContentComponent implements OnInit {
         description: 'We working on build fully ERP system on python frappe framework, I manage user interface and user experience by using PHP for frontend development use frameworks like Laravel and integration with python API.'
       }
     ];
-    this.get_portfolio();
+    this.portfolio = [
+      {
+        id: 1,
+        name: "Ứng dụng jeeplatform với nhiều module",
+        url: "../../../assets/video/JeePlatform.mp4"
+      },
+      {
+        id: 2,
+        name: "Mạng xã hội nội bộ",
+        url: "../../../assets/video/social.mp4"
+      },
+      {
+        id: 3,
+        name: "Mobile app",
+        url: "../../../assets/video/video-mobile.mp4"
+      },
+      {
+        id: 4,
+        name: "Api với .NET Core,SignalR,Redis....",
+        url: "../../../assets/video/api.mp4"
+      },
+      {
+        id: 5,
+        name: "Gọi thoại và gọi video được tích hợp",
+        url: "../../../assets/video/callvideo.mp4"
+      },
+      {
+        id: 6,
+        name: "Và nhiều dự án khác...",
+        url: "../../../assets/video/git.mp4"
+      },
+
+    ]
+    // this.get_portfolio();
   }
 
-  get_portfolio() {
-    this.behance.getPortfolio().subscribe((response) => {
-      this.portfolio = (response) ? response['projects'] : response;
-    });
+  // get_portfolio() {
+  //   this.behance.getPortfolio().subscribe((response) => {
+  //     this.portfolio = (response) ? response['projects'] : response;;
+  //     console.log("this.portfolio", this.portfolio)
+  //   });
+  // }
+  openModal(id: string, url: string) {
+    this.modalService.open(id);
+    this.urlactive = url.toString();
   }
 
+
+  closeModal(id: string) {
+    this.modalService.close(id);
+    this.urlactive = undefined
+  }
+  EventCloseOutSide() {
+    this.modalService.eventCloseOutSide$.subscribe(res => {
+      if (res && res == true) {
+        this.urlactive = undefined
+        this.changeDetectorRefs.detectChanges()
+      }
+    })
+  }
   ngOnInit(): void {
+    this.EventCloseOutSide()
   }
 
 }

@@ -11,23 +11,29 @@ import { ContentComponent } from './components/content/content.component';
 import { OrderbyPipe } from './pipes/orderby/orderby.pipe';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PreviewVideoComponent } from './components/preview-video/preview-video.component';
+import { ModalModule } from './components/_model';
+import { ModalService } from './services/modal.service';
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     FooterComponent,
     ContentComponent,
-    OrderbyPipe
+    OrderbyPipe,
+    PreviewVideoComponent
   ],
+  entryComponents: [PreviewVideoComponent],
   imports: [
     BrowserModule,
+    ModalModule,
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
     HttpClientJsonpModule,
     NgxPaginationModule
   ],
-  providers: [],
+  providers: [ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
