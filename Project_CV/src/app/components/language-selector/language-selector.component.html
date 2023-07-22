@@ -1,0 +1,49 @@
+<!--begin::Languages-->
+<div class="dropdown" ngbDropdown  [autoClose]="true">
+  <!--begin::Toggle-->
+  <a style="      margin-top: -10px;
+  position: absolute;
+  right: 0px;" class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1" ngbDropdownToggle>
+    <img
+    style="  width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
+"
+      class="h-35px w-35px rounded"
+      src="{{ language?.flag }}"
+      alt="language"
+    />
+  </a>
+  <!--end::Toggle-->
+
+  <!--begin::Dropdown-->
+  <div
+    ngbDropdownMenu
+    class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right"
+  >
+    <ul style="    padding-left: 20px;" class="navi navi-hover py-2">
+      <ng-container *ngFor="let language of languages">
+        <li style="padding-top: 10px;" class="navi-item" [ngClass]="{ active: language.active }">
+          <a
+            href="javascript:;"
+            (click)="setLanguageWithRefresh(language.lang)"
+            [ngClass]="{ active: language.active }"
+            class="navi-link"
+          >
+            <span class="symbol symbol-20 mr-3">
+              <img style="    border-radius: 3px;
+              width: 100%;
+              max-width: 20px;
+              height: 20px;" src="{{ language.flag }}" />
+            </span>
+            <span class="navi-text">{{ language.name }}</span>
+          </a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+  <!--end::Dropdown-->
+</div>
+<!--end::Languages-->

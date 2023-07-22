@@ -1,3 +1,4 @@
+import { NgbDropdown, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
@@ -14,11 +15,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PreviewVideoComponent } from './components/preview-video/preview-video.component';
 import { ModalModule } from './components/_model';
 import { ModalService } from './services/modal.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     FooterComponent,
+    LanguageSelectorComponent,
     ContentComponent,
     OrderbyPipe,
     PreviewVideoComponent
@@ -26,12 +31,16 @@ import { ModalService } from './services/modal.service';
   entryComponents: [PreviewVideoComponent],
   imports: [
     BrowserModule,
+    NgbModule,
     ModalModule,
+    TranslateModule.forRoot(),
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgbDropdownModule,
     HttpClientJsonpModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    RouterModule.forRoot([])
   ],
   providers: [ModalService],
   bootstrap: [AppComponent]

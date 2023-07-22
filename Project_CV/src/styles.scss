@@ -37,3 +37,20 @@ a {
 p {
   line-height: 1.5;
 }
+
+.dropdown-menu.dropdown-menu-sm {
+  transform: translate(166px, 38px) !important;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+// .dropdown-toggle::after {
+//   display: none;
+// }
