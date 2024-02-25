@@ -5,8 +5,9 @@
   <div class="profile-container">
  
     <img class="profile" src="assets/images/avatar.jpg" alt="Abdo Hamoud">
-    <h1 class="name">{{myName}}</h1>
+    <h1 class="name">{{'CV.name' | translate}}</h1>
     <h3 class="tagline">{{myJob}}</h3>
+    <button  mat-button color="primary">Tải xuống</button>
   </div><!--//profile-container-->
   <div class="contact-container container-block">
     <ul class="list-unstyled contact-list">
@@ -28,7 +29,7 @@
       </li>
       <li class="github">
         <i class="fab fa-skype"></i>
-        <a href="{{contactDetails.stackoverflow}}" target="_blank">live:.cid.489b2ea999100079</a>
+        <a href="javascript:;" >live:.cid.489b2ea999100079</a>
       </li>
       <!-- <li class="linkedin">
         <i class="fab fa-linkedin-in"></i>
@@ -44,9 +45,9 @@
   <div class="education-container container-block">
     <h2 class="container-block-title">Education</h2>
     <div class="item">
-      <h5>Đại Học Công Nghiệp Thực Phẩm TP.HCM</h5>
-      <h4 class="degree">Công nghệ phầm mềm</h4>
-      <h5 class="degree">Tốt nghiệp loại : Giỏi</h5>
+      <h5>{{'CV.truong' | translate}}</h5>
+      <h4 class="degree">{{'CV.nganh' | translate}}</h4>
+      <h5 class="degree">{{'CV.loai' | translate}}</h5>
       <div class="degree">2017 – 2021</div>
     </div><!--//item-->
   </div><!--//education-container-->
@@ -65,7 +66,7 @@
   <div class="languages-container container-block">
     <h2 class="container-block-title">Languages</h2>
     <ul class="list-unstyled interests-list">
-      <li>English : <span class="lang-desc">Đọc hiểu</span></li>
+      <li>English : <span class="lang-desc">  {{'CV.dochieu' | translate}}</span></li>
     </ul>
   </div><!--//interests-->
 
@@ -76,13 +77,16 @@
       <li>CSS ( LESS , SCSS )</li>
       <li>Javascript</li>
       <li>Typescript</li>
+      <li>Nestjs</li>
       <li>Angular +</li>
+      <li>Docker</li>
+      <li>Kafka</li>
       <li>Nodejs</li>
       <li>HTTP Request (Restful API)</li>
       <li>React Native</li>
       <li>Electronjs</li>
       <li>MongoDB</li>
-      <li>.NET</li>
+      <li>NET Core</li>
       <li>SQL Server</li>
       <li>Firebase</li>
       <li>WebRTC</li>

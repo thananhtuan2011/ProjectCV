@@ -2,115 +2,55 @@
 export const locale = {
   lang: 'en',
   data: {
-    TRANSLATOR: {
-      SELECT: 'Select your language',
+
+    CV: {
+      name: 'Than Anh Tuan',
+      dochieu: "Rather",
+      truong: "Ho Chi Minh City University of Food Industry",
+      nganh: "Software Engineering",
+      loai: "Graduation category: Excellent",
+      hoso: "CAREER PROFILE",
+      noidung1: "▪ Over 3 years of programming experience with Angular +",
+      noidung2: " ▪ More than 2 years working with Electronjs building desktop applications on windows and macos",
+      noidung3: "▪  Experience in making architectural design documents (Basic design, Low level design, Detail design, DataBase, SQL Server, MongoDB...)",
+      noidung4: "▪ More than 2 years of experience and knowledge about HTTP Request (Restful API), .Net",
+      noidung5: "▪Over 6 months of mobile programming with React Native deploying and designing mobile apps",
+      noidung6: "▪ Build Progressive Web App (PWA) with Angular",
+      kinhnghiem: "EXPERIENCE",
+      congty: "I have experience working at Dai Phat Solutions company as Fullstack Developer.",
+      bang: "I have a bachelor's degree in software engineering.",
+      gioithieu: "I'm Tuan, a software engineer with more than 2 years of professional experience in designing and developing user interfaces as well as handling software, I currently live in Ho Chi Minh City.",
+      duan: "PROJECT",
+      title1: " 1. Chat, team, work application is in the jeeplatform ecosystem with many functions",
+      mota1: "- Description: Build a chat application between employees, create tasks (work in chat), create meetings using zoom or msTeam, send files, images, videos, stickers, tag names, encrypt messages and notifications....",
+      tech1: "- Technical: Using Angular 11, material UI,Websocket, SignalR, Sql Server, .NET,Json, HTTP Request (Restful API)",
+      title2: "  2. Build chat lib and publish to npm",
+      mota2: "- Description: Publish the library to npm so that many apps can use it.",
+      tech2: "- Technical: Using Angular, NPM, Nodejs...",
+      title3: "3. Micro Frontends",
+      mota3: "Description: Micro Frontends will decompose these applications into combinations of features, each of which can be developed by an independent team. Deployed in jeeplatform.",
+      tech3: "- Technical:  Using Angular 12+, material UI, angular-architects",
+      title4: "4.  Internal social network",
+      mota4: "- Description: The internal social network is used as a `platform` to develop and use applications to support operations and decision-making processes within the enterprise. With the traditional way, all information and documents must be printed with documents and reviewed in hard copy, stored in the company's file cabinet, created posts with images, files, notices, expressed feelings, integrated chat from the self-built npm chat lib in the system.",
+      tech4: "- Technical:  Using Angular 11+, material UI, Websocket, SignalR, Sql Server, .NET, Json, HTTP Request (Restful API)...",
+      title5: " 5. Build desktop application with Electronjs on windowsn and macos",
+      mota5: "- Description: Desktop application on windows and macos, notify, automatically start the application when starting the machine, automatically update the version when there is a new release..",
+      tech5: "- Technical: Sử dụng Electronjs, Electron builder, Nodejs, HTML, SCSS,Electron Notification, Github...",
+      title6: "6. Build a task management application on mobile.",
+      mota6: "- Description: Create task, work progress statistics, project management, department management..",
+      tech6: "- Technical: React Native, Redux, Saga, Persist, HTTP Request (Restful API), Animation, Notifications, Caching...",
+      name1: "Jeeplatform app with many modules",
+      name2: "Internal social network",
+      name3: "Api with .NET Core,SignalR,Redis....",
+      name4: "Integrated voice and video calling",
+      name5: "And many more projects..."
+
+
+
+
     },
-    MENU: {
-      NEW: 'new',
-      ACTIONS: 'Actions',
-      CREATE_POST: 'Create New Post',
-      PAGES: 'Pages',
-      FEATURES: 'Features',
-      APPS: 'Apps',
-      DASHBOARD: 'Dashboard',
-    },
-    AUTH: {
-      GENERAL: {
-        OR: 'Or',
-        SUBMIT_BUTTON: 'Submit',
-        NO_ACCOUNT: 'Don\'t have an account?',
-        SIGNUP_BUTTON: 'Sign Up',
-        FORGOT_BUTTON: 'Forgot Password',
-        BACK_BUTTON: 'Back',
-        PRIVACY: 'Privacy',
-        LEGAL: 'Legal',
-        CONTACT: 'Contact',
-      },
-      LOGIN: {
-        TITLE: 'Login Account',
-        BUTTON: 'Sign In',
-      },
-      FORGOT: {
-        TITLE: 'Forgotten Password?',
-        DESC: 'Enter your email to reset your password',
-        SUCCESS: 'Your account has been successfully reset.'
-      },
-      REGISTER: {
-        TITLE: 'Sign Up',
-        DESC: 'Enter your details to create your account',
-        SUCCESS: 'Your account has been successfuly registered.'
-      },
-      INPUT: {
-        EMAIL: 'Email',
-        FULLNAME: 'Fullname',
-        PASSWORD: 'Password',
-        CONFIRM_PASSWORD: 'Confirm Password',
-        USERNAME: 'Username'
-      },
-      VALIDATION: {
-        INVALID: '{{name}} is not valid',
-        REQUIRED: '{{name}} is required',
-        MIN_LENGTH: '{{name}} minimum length is {{min}}',
-        AGREEMENT_REQUIRED: 'Accepting terms & conditions are required',
-        NOT_FOUND: 'The requested {{name}} is not found',
-        INVALID_LOGIN: 'The login detail is incorrect',
-        REQUIRED_FIELD: 'Required field',
-        MIN_LENGTH_FIELD: 'Minimum field length:',
-        MAX_LENGTH_FIELD: 'Maximum field length:',
-        INVALID_FIELD: 'Field is not valid',
-      }
-    },
-    ECOMMERCE: {
-      COMMON: {
-        SELECTED_RECORDS_COUNT: 'Selected records count: ',
-        ALL: 'All',
-        SUSPENDED: 'Suspended',
-        ACTIVE: 'Active',
-        FILTER: 'Filter',
-        BY_STATUS: 'by Status',
-        BY_TYPE: 'by Type',
-        BUSINESS: 'Business',
-        INDIVIDUAL: 'Individual',
-        SEARCH: 'Search',
-        IN_ALL_FIELDS: 'in all fields'
-      },
-      ECOMMERCE: 'eCommerce',
-      CUSTOMERS: {
-        CUSTOMERS: 'Customers',
-        CUSTOMERS_LIST: 'Customers list',
-        NEW_CUSTOMER: 'New Customer',
-        DELETE_CUSTOMER_SIMPLE: {
-          TITLE: 'Customer Delete',
-          DESCRIPTION: 'Are you sure to permanently delete this customer?',
-          WAIT_DESCRIPTION: 'Customer is deleting...',
-          MESSAGE: 'Customer has been deleted'
-        },
-        DELETE_CUSTOMER_MULTY: {
-          TITLE: 'Customers Delete',
-          DESCRIPTION: 'Are you sure to permanently delete selected customers?',
-          WAIT_DESCRIPTION: 'Customers are deleting...',
-          MESSAGE: 'Selected customers have been deleted'
-        },
-        UPDATE_STATUS: {
-          TITLE: 'Status has been updated for selected customers',
-          MESSAGE: 'Selected customers status have successfully been updated'
-        },
-        EDIT: {
-          UPDATE_MESSAGE: 'Customer has been updated',
-          ADD_MESSAGE: 'Customer has been created'
-        }
-      }
-    },
-    //===================================Start translate Thiên=============================
-    MainMenu: {
-      lichcanhan: 'Calendar',
-      congviec: 'Work',
-      yeucau: 'Request',
-      chat: 'Chat',
-      nhansu: 'HR',
-      hanhchinh: 'Admin',
-      hop: 'Meet',
-      nhom: 'Group',
-    },
-  }
+
+
+
+  },
 };

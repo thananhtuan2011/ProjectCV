@@ -3,6 +3,7 @@ import { BehanceService } from '../../services/behance.service';
 import { MatDialog } from '@angular/material/dialog';
 import { PreviewVideoComponent } from '../preview-video/preview-video.component';
 import { ModalService } from '../_model/modal.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-content',
@@ -17,7 +18,7 @@ export class ContentComponent implements OnInit {
   p = 1;
   urlactive: string;
 
-  constructor(private dialog: MatDialog, private modalService: ModalService, private changeDetectorRefs: ChangeDetectorRef,) {
+  constructor(private dialog: MatDialog, private translate: TranslateService, private modalService: ModalService, private changeDetectorRefs: ChangeDetectorRef,) {
     this.experiences = [
       {
         title: 'Founder',
@@ -67,12 +68,12 @@ export class ContentComponent implements OnInit {
     this.portfolio = [
       {
         id: 1,
-        name: "Ứng dụng jeeplatform với nhiều module",
+        name: this.translate.instant('CV.name1'),
         url: "../../../assets/video/JeePlatform.mp4"
       },
       {
         id: 2,
-        name: "Mạng xã hội nội bộ",
+        name: this.translate.instant('CV.name2'),
         url: "../../../assets/video/social.mp4"
       },
       {
@@ -82,17 +83,17 @@ export class ContentComponent implements OnInit {
       },
       {
         id: 4,
-        name: "Api với .NET Core,SignalR,Redis....",
+        name: this.translate.instant('CV.name3'),
         url: "../../../assets/video/api.mp4"
       },
       {
         id: 5,
-        name: "Gọi thoại và gọi video được tích hợp",
+        name: this.translate.instant('CV.name4'),
         url: "../../../assets/video/callvideo.mp4"
       },
       {
         id: 6,
-        name: "Và nhiều dự án khác...",
+        name: this.translate.instant('CV.name5'),
         url: "../../../assets/video/git.mp4"
       },
 
