@@ -76,6 +76,7 @@ export class ContentComponent implements OnInit {
         name: this.translate.instant('CV.name2'),
         url: "../../../assets/video/social.mp4"
       },
+
       {
         id: 3,
         name: "Mobile app",
@@ -95,6 +96,11 @@ export class ContentComponent implements OnInit {
         id: 6,
         name: this.translate.instant('CV.name5'),
         url: "../../../assets/video/git.mp4"
+      },
+      {
+        id: 7,
+        name: this.translate.instant('CV.name6'),
+        url: "../../../assets/video/chat.mp4"
       },
 
     ]

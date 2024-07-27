@@ -36,14 +36,18 @@ export const locale = {
       title5: " 5. Xây dựng ứng dụng desktop với Electronjs trên windown và macos",
       mota5: "- Mô tả: Ứng dụng desktop trên windows và macos, notify, tự khởi động ứng dụng khi khởi động máy, tự động update version khi có release mới..",
       tech5: "- Technical: Sử dụng Electronjs, Electron builder, Nodejs, HTML, SCSS,Electron Notification, Github...",
-      title6: "6. Xây dựng ứng dụng quản lý công việc trên mobile.",
-      mota6: "- Mô tả: Tạo task, tiến độ công việc thống kê, quản lý dự án, quản lý phòng ban..",
-      tech6: "- Technical: React Native, Redux, Saga, Persist, HTTP Request (Restful API), Animation, Notifications, Caching...",
+      title6: "6. Xây dựng ứng dụng chatbot với openai",
+      mota6: "- Mô tả: Tạo chatbot",
+      tech6: "- Technical:OpenAI, Langchain, Vector DB",
+      title7: "7. Tích hợp cổng thanh toán VNPay và OnePay",
+      mota7: "- Mô tả: Tích hợp cổng thanh toán để thanh toán hóa đơn cho đơn hàng",
+      tech7: "- Technical:VNPay API,OnePay API",
       name1: "Ứng dụng jeeplatform với nhiều module",
       name2: "Mạng xã hội nội bộ",
       name3: "Api với .NET Core,SignalR,Redis....",
       name4: "Gọi thoại và gọi video được tích hợp",
-      name5: "Và nhiều dự án khác..."
+      name5: "Và nhiều dự án khác...",
+      name6: "Ứng dụng trò chuyện"
 
 
 

@@ -36,15 +36,18 @@ export const locale = {
       title5: " 5. Build desktop application with Electronjs on windowsn and macos",
       mota5: "- Description: Desktop application on windows and macos, notify, automatically start the application when starting the machine, automatically update the version when there is a new release..",
       tech5: "- Technical: Sử dụng Electronjs, Electron builder, Nodejs, HTML, SCSS,Electron Notification, Github...",
-      title6: "6. Build a task management application on mobile.",
-      mota6: "- Description: Create task, work progress statistics, project management, department management..",
-      tech6: "- Technical: React Native, Redux, Saga, Persist, HTTP Request (Restful API), Animation, Notifications, Caching...",
+      title6: "6. Build a chatbot to help answer related questions. The data is trained",
+      mota6: "- Description: Creat chatbot with  OpenAI",
+      tech6: "- Technical: OpenAI, Langchain, Vector DB,",
+      title7: "7. Integrate payment gateways VNPay and OnePay",
+      mota7: "- Description: Integrate payment gateway to pay invoices for orders",
+      tech7: "- Technical:VNPay API,OnePay API",
       name1: "Jeeplatform app with many modules",
       name2: "Internal social network",
       name3: "Api with .NET Core,SignalR,Redis....",
       name4: "Integrated voice and video calling",
-      name5: "And many more projects..."
-
+      name5: "And many more projects...",
+      name6: "Chat application..."
 
 
 

@@ -20,9 +20,9 @@ export class TranslationService {
 
   constructor(private translate: TranslateService) {
     // add new langIds to the list
-    this.translate.addLangs(['vi']);
+    this.translate.addLangs(['en']);
     // this language will be used as a fallback when a translation isn't found in the current language
-    this.translate.setDefaultLang('vi');
+    this.translate.setDefaultLang('en');
   }
 
   loadTranslations(...args: Locale[]): void {
@@ -51,9 +51,9 @@ export class TranslationService {
   /**
    * Returns selected language
    */
-   public getSelectedLanguage(): Observable<any> {
-		return of(localStorage.getItem('language') || this.translate.getDefaultLang());
-	}
+  public getSelectedLanguage(): Observable<any> {
+    return of(localStorage.getItem('language') || this.translate.getDefaultLang());
+  }
   // getSelectedLanguage(): any {
   //   debugger
   //   return (
