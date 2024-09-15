@@ -20,7 +20,7 @@ export class SidebarComponent implements OnInit {
       facebook: 'https://www.facebook.com/iwehiop/',
       github: 'https://github.com/thananhtuan2011',
       stackoverflow: 'https://stackoverflow.com/users/2262856/abdo-host',
-      linkedin: 'https://www.linkedin.com/in/abdohost',
+      linkedin: 'https://www.linkedin.com/in/th%C3%A2n-anh-tu%E1%BA%A5n-124951168',
       twitter: 'https://twitter.com/Abdo_Host'
     };
   }
