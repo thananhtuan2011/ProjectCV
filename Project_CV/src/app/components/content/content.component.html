@@ -1,223 +1,97 @@
 <div class="main-wrapper">
 
-  <section class="section summary-section">
-    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>{{'CV.hoso' | translate}}</h2>
-    <div class="summary">
-      <p class="color-blod">
-        {{'CV.gioithieu' | translate}}
-      </p>
-      <!-- <p>
-        {{'CV.bang' | translate}}
-      </p> -->
-      <p>
-        {{'CV.congty' | translate}}
-      </p>
-      
-
-    </div><!--//summary-->
-  </section><!--//section-->
-
   <section class="section experiences-section">
-    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>{{'CV.kinhnghiem' | translate}}</h2>
+    <h2 class="section-title"><span class="icon-holder"><i
+          class="fas fa-user"></i></span>{{'CV.hoso' |
+      translate}}</h2>
 
-    <div style="display: flex;flex-direction: column;flex-wrap: wrap;">
-      <span> {{'CV.noidung1' | translate}}</span>
-      <span> {{'CV.noidung2' | translate}}</span>
-      <span> {{'CV.noidung3' | translate}}</span>
-      <span> {{'CV.noidung4' | translate}}</span>
-      <span>{{'CV.noidung5' | translate}}</span>
-      <span>{{'CV.noidung6' | translate}}</span>
-    </div>
+    <ul>
+      <li> {{'CV.noidung1' | translate}}</li>
+      <li> {{'CV.noidung2' | translate}}</li>
+      <li> {{'CV.noidung3' | translate}}</li>
+      <li> {{'CV.noidung4' | translate}}</li>
+      <li>{{'CV.noidung5' | translate}}</li>
+      <li>{{'CV.noidung6' | translate}}</li>
+      <li>{{'CV.noidung7' | translate}}</li>
+      <li>{{'CV.noidung8' | translate}}</li>
+      <li>{{'CV.noidung9' | translate}}</li>
+      <li>{{'CV.noidung10' | translate}}</li>
+      <li>{{'CV.noidung11' | translate}}</li>
+      <li>{{'CV.noidung12' | translate}}</li>
+      <li>{{'CV.noidung13' | translate}}</li>
+      <li>{{'CV.noidung14' | translate}}</li>
+      <li>{{'CV.noidung17' | translate}}</li>
+      <li>{{'CV.noidung18' | translate}}</li>
+      <li>{{'CV.noidung15' | translate}}</li>
+      <li>{{'CV.noidung16' | translate}}</li>
+
+    </ul>
 
   </section>
   <section class="section experiences-section">
-    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>{{'CV.duan' | translate}}</h2>
+    <h2 class="section-title"><span class="icon-holder"><i
+          class="fas fa-cog"></i></span>{{'CV.technical_skills_title' |
+      translate}}</h2>
+    <ul>
+      <li>
+        <span class="label">{{ 'CV.programming_languages' | translate }}:</span>
+        HTML, CSS (LESS, SCSS), Tailwind CSS, Javascript, Typescript
+      </li>
+      <li>
+        <span class="label">{{ 'CV.framework' | translate }}:</span>
+        Nestjs, Angular +, Nodejs, Electronjs, .NET, React
+      </li>
+      <li>
+        <span class="label">{{ 'CV.database' | translate }}:</span>
+        HTTP Request (Restful API), MongoDB, SQL Server, MySQL, Postgresql
+      </li>
+      <li>
+        <span class="label">{{ 'CV.office' | translate }}:</span>
+        Microsoft, Excel, Power Point
+      </li>
+      <li>
+        <span class="label">{{ 'CV.others' | translate }}:</span>
+        Docker, Kafka, Firebase, WebRTC, Redis, RabbitMQ,
+        SignalR, Websocket, Github,
+        GitLab, Oauth, Azure, Jenkins, Agile/Scrum.
+      </li>
+    </ul>
+  </section>
+  <section class="section experiences-section">
+    <h2 class="section-title"><span class="icon-holder"><i
+          class="fas fa-briefcase"></i></span>{{'CV.working_experience_title' |
+      translate}}</h2>
+    <div *ngFor="let exp of ('CV.experience' | translate)"
+      style="border-bottom: 1px solid; margin-bottom: 20px;">
 
-    <div style="display: flex;flex-direction: column;flex-wrap: wrap;">
-      <div>
-        <div  style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-          {{'CV.title1' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>    {{'CV.mota1' | translate}}</p>
+      <h4 *ngIf="exp.company" style="  color: #333;
+          font-weight: 600;">
+        <i style="  color: #333;font-size: 14px; padding-right: 4px;
+          font-weight: 600;" class="fas fa-tag"></i>
+        {{ exp.company }}
 
+      </h4>
+      <p><span style="  color: #333;
+          font-weight: 600;">Project:</span> <span
+          style="font-style: italic;"> {{ exp.project }}</span> ({{ exp.duration
+        }})</p>
+      <p><span style="  color: #333;
+          font-weight: 500;">Title:</span> {{ exp.position }}</p>
 
-          </span>
-          <span class="itemconten">
-            <p> {{'CV.tech1' | translate}}</p>
+      <p><span style="  color: #333;
+          font-weight: 500;">Description:</span> {{ exp.description }}</p>
+      <p><span style="  color: #333;
+          font-weight: 500;">Team size:</span> {{ exp.team_size }}</p>
 
+      <p><span style="  color: #333;
+          font-weight: 500;">Responsibilities:</span></p>
+      <ul>
+        <li *ngFor="let task of exp.responsibilities">{{ task }}</li>
+      </ul>
 
-          </span>
-          <span class="itemconten">- Team size: 7 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-             {{'CV.title2' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.mota2' | translate}}
-            </p>
-
-
-
-          </span>
-          <span class="itemconten">
-            <p> {{'CV.tech2' | translate}} </p>
-
-
-          </span>
-          <span class="itemconten">- Team size: 1 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-        {{'CV.title3' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.mota3' | translate}}
-            </p>
-
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.tech3' | translate}}</p>
-
-
-          </span>
-          <span class="itemconten">- Team size: 5 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-         {{'CV.title4' | translate}}
-          </span>
-          <span class="itemconten">
-            <p> {{'CV.mota4' | translate}}
-            </p>
-
-
-
-          </span>
-          <span class="itemconten">
-            <p> {{'CV.tech4' | translate}} </p>
-
-
-          </span>
-          <span class="itemconten">- Team size: 1 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-             {{'CV.title5' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>     {{'CV.mota5' | translate}}
-
-            </p>
-
-          </span>
-          <span class="itemconten">
-            {{'CV.tech5' | translate}}
-
-          </span>
-          <span class="itemconten">- Team size: 1 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-         {{'CV.title6' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.mota6' | translate}}
-
-            </p>
-
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.tech6' | translate}}
-          </span>
-          <span class="itemconten">- Team size: 1 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-         {{'CV.title7' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.mota7' | translate}}
-
-            </p>
-
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.tech7' | translate}}
-          </span>
-          <span class="itemconten">- Team size: 1 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <span style="  color: #333;
-          font-weight: 500;">
-         {{'CV.title8' | translate}}
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.mota8' | translate}}
-
-            </p>
-
-          </span>
-          <span class="itemconten">
-            <p>  {{'CV.tech8' | translate}}
-          </span>
-          <span class="itemconten">- Team size: 5 person</span>
-        </div>
-        <div style="display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-      ">
-          <!-- <span style="  color: #333;
-          font-weight: 500;">
-            7. Xây dựng ứng dụng Desktop với Electronjs
-          </span>
-          <span class="itemconten">
-            <p> - Mô tả: Xây dựng ứng dụng desktop trên windows và macos, Tự động khởi động khi khởi động máy,
-               minisize Overlay icon for Tray...
-
-            </p>
-
-          </span>
-          <span class="itemconten">
-            <p> - Technical: Angular, Nodejs, Electronjs, 
-              Electron Builder, Github, Electron Notification...
-          </span> -->
-        </div>
-      </div>
-
+      <p><span style="  color: #333;
+          font-weight: 500;">Technologies:</span> {{ exp.technologies.join(', ')
+        }}</p>
 
     </div>
 
@@ -230,8 +104,10 @@
     </h2>
     <div class="portfolio-content">
       <div class="row">
-        <div class="col-xl-6" *ngFor="let item of portfolio | paginate: { itemsPerPage: 4, currentPage: p }">
-          <div class="portfolio-item" (click)="openModal('custom-modal-1',item.url)">
+        <div class="col-xl-6"
+          *ngFor="let item of portfolio | paginate: { itemsPerPage: 4, currentPage: p }">
+          <div class="portfolio-item"
+            (click)="openModal('custom-modal-1',item.url)">
             <video src="{{item.url}}"></video>
             <!-- <img src="{{item.covers['404']}}" alt="{{item.name}}"> -->
             <div class="details">
@@ -252,7 +128,8 @@
         </div>
       </div>
       <div class="text-center mt-3">
-        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        <pagination-controls
+          (pageChange)="p = $event"></pagination-controls>
       </div>
     </div>
 
@@ -260,13 +137,15 @@
 
 </div><!--//main-body-->
 
-<jw-modal  id="custom-modal-1">
-  <button style="    margin-bottom: 10px;" (click)="closeModal('custom-modal-1');" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+<jw-modal id="custom-modal-1">
+  <button style="    margin-bottom: 10px;"
+    (click)="closeModal('custom-modal-1');" mat-icon-button
+    color="primary" aria-label="Example icon button with a home icon">
     <mat-icon>close</mat-icon>
   </button>
- <video *ngIf="urlactive"  width="100%" height="100%" controls >
-  <source [src]="urlactive" type="video/mp4" />
- </video>
+  <video *ngIf="urlactive" width="100%" height="100%" controls>
+    <source [src]="urlactive" type="video/mp4" />
+  </video>
 
- <!-- <button >Close</button> -->
+  <!-- <button >Close</button> -->
 </jw-modal>
