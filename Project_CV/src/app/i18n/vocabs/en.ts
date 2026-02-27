@@ -5,7 +5,7 @@ export const locale = {
 
     CV: {
       name: 'Than Anh Tuan',
-      dochieu: "Rather",
+      dochieu: "B1",
       truong: "Ho Chi Minh City University of Food Industry",
       nganh: "Software Engineering",
       loai: "Graduation category: Excellent",
@@ -15,7 +15,7 @@ export const locale = {
       noidung3: " Have experience with Book flight tickets for Vietjet air and E-Commerce",
       noidung4: " More than 1 year working with Electronjs to build desktop applications on windows and macOS",
       noidung5: " Have experience in making architectural design documents (Basic design, Low level design, Detail design, DataBase, SQL Server, MongoDB, MySQL...)",
-      noidung6: " More than 4 years of experience and knowledge about HTTP Request (Restful API), .Net",
+      noidung6: " More than 3 years of experience and knowledge about HTTP Request (Restful API), .Net",
       noidung7: " Build chatbot with OpenAI, Gemini",
       noidung8: " I always keep up to date with new technologies and joining many projects which applying agile process and having daily meetings with customer, on-shore team to estimate and report tasks.",
       noidung9: " Have a bachelor's degree in software engineering",
@@ -64,6 +64,68 @@ export const locale = {
       name6: "Chat application...",
       "working_experience_title": "WORKING EXPERIENCE",
       "experience": [
+
+        {
+          "company": " HTECOM Technology ",
+          "position": "FullStack Developer, Booking (Remote FullTime) ",
+          "project": "Booking",
+          "duration": "12/2025 - Present",
+          "description": `The Bus Ticket Booking System is a platform that helps customers quickly and conveniently 
+search, book, and pay for bus tickets online.The system allows for real - time management of routes, schedules,
+          seats, fares, and orders, helping bus companies optimize operations and enhance customer experience.CMS 
+for Admin is a central management system that allows administrators to manage all data and operations of the 
+bus ticket booking system, including routes, trips, vehicles, fares, bookings, and users, helping to operate the 
+system efficiently and accurately.`,
+          "team_size": "6 members",
+          "responsibilities": [
+            "Build and enhance web applications using TypeScript and Angular frameworks.",
+            "Implement responsive design and ensure cross-browser compatibility using Bootstrap and PrimeNG UI.",
+            "Design, develop, and optimize backend services using .NET Core.",
+            "Build and manage RESTful APIs with PostgreSQL to communicate with frontend and external systems.",
+            "Design database structures using PostgreSQL, write efficient queries, and perform system performance optimization.",
+            "Participate in business requirement analysis with BA and build technical specifications.",
+            "Implement security, authentication, and authorization solutions such as JWT and OAuth2.",
+            "Write clean, maintainable, and efficient code.",
+            "Continuously learn and implement the latest best practices and standards in TypeScript, Angular, and Tailwind CSS.",
+            "Stay current with emerging trends in front-end development and suggest improvements and innovative solutions.",
+            "Write unit, integration, and end-to-end tests to ensure robustness and reliability of applications.",
+            "Debug and resolve issues reported by QA and end-users promptly.",
+            "Implement state management using Angular Signals."
+          ],
+          "technologies": ["Typescript", "Angular 20", "Tailwind", ".NET 9", "Postgresql 16", "Rxjs", "Primeng UI"],
+          "demo": ["booking-ticket-fe.vercel.app", "https://booking-ticket-cms.vercel.app"]
+        },
+        {
+          "position": "Frontend Developer (Remote FullTime) ",
+          "project": "Ninh Binh Province Cultural Database",
+          "duration": "08/2025 - Present",
+          "description": ` Ninh Binh Provincial Cultural Database is a centralized information system, built to store, 
+manage and comprehensively exploit data related to tangible and intangible cultural heritage, historical relics, 
+scenic spots, festivals, customs, traditional craft villages and typical local cultural values. The CMS (Content 
+Management System) of the Portal is designed to centrally manage all content and data displayed on the 
+website. The system allows flexible content management (adding, editing, deleting and updating articles, news, 
+events, images, videos, documents), and supports user authorization with many different account groups such 
+as administrators, editors, collaborators. The CMS also allows specialized data management (heritage, culture, 
+tourism, policies, etc.) according to a standardized structure, integrating multimedia (maps, 360° images, video 
+clips, photo libraries), along with advanced search and lookup tools to help users easily access information. In 
+addition, the system is scalable and can connect to external platforms such as APIs, national databases or smart 
+tourism systems.`,
+          "team_size": "15 members",
+          "responsibilities": [
+            "Design and implement user interfaces using TypeScript and Angular v20.",
+            "Ensure the application's look and feel aligns with design specifications using Tailwind CSS.",
+            "Develop reusable UI components to enhance development efficiency.",
+            "Integrate front-end components with RESTful APIs and other backend services.",
+            "Collaborate with backend developers to define data requirements and ensure seamless data flow.",
+            "Write unit tests and participate in end-to-end testing to ensure code quality and functionality.",
+            "Participate in business requirement analysis with BA and build technical specifications.",
+            "Implement security, authentication, and authorization solutions such as JWT and OAuth2.",
+            "Integrate the system with third-party services such as Google Maps API.",
+            "Review and optimize code to improve performance and maintainability."
+          ],
+          "technologies": ["Typescript", "Angular 20", "Tailwind", "Rxjs", "Ant design", "Google Map", "Open Street Map"],
+          "demo": ["https://ditich.ninhbinh.gov.vn"]
+        },
         {
           "company": "Innologiciel",
           "position": "FullStack Developer (Remote FullTime)",
@@ -80,7 +142,8 @@ export const locale = {
             "Write unit tests and participate in end-to-end testing.",
             "Conduct code reviews and enforce coding standards."
           ],
-          "technologies": ["Typescript", "Angular 18", "Tailwind", ".NET 8", "Postgresql 16", "Rxjs", "Syncfusion UI"]
+          "technologies": ["Typescript", "Angular 18", "Tailwind", ".NET 8", "Postgresql 16", "Rxjs", "Syncfusion UI"],
+          "demo": ["https://app.innobooks.net",]
         },
         {
           "company": "Bstar Solutions",
@@ -99,7 +162,8 @@ export const locale = {
             "Build CMS ticket configuration.",
             "Write and test high-quality code."
           ],
-          "technologies": ["Typescript", "Angular", "Tailwind", "Ant design", "Rxjs"]
+          "technologies": ["Typescript", "Angular", "Tailwind", "Ant design", "Rxjs"],
+          "demo": ["https://skyjoy.vietjetair.com",]
         },
         {
           "company": "DPS Solutions",
@@ -114,7 +178,8 @@ export const locale = {
             "Write clean, testable code.",
             "Debug and resolve user issues."
           ],
-          "technologies": ["Typescript", "Angular 15", "Material UI", "MySQL", "Nodejs"]
+          "technologies": ["Typescript", "Angular 15", "Material UI", "MySQL", "Nodejs"],
+          "demo": ["https://github.com/thananhtuan2011/Contract_Project",]
         },
         {
           "project": "E-commerce",
@@ -128,7 +193,8 @@ export const locale = {
             "Integrate chatbot, payments, and reporting tools.",
             "Write tests and ensure reliability."
           ],
-          "technologies": ["Typescript", "Angular 14", "Material UI", "Chart", "SQL 2022", ".NET"]
+          "technologies": ["Typescript", "Angular 14", "Material UI", "Chart", "SQL 2022", ".NET"],
+          "demo": []
         },
         {
           "project": "ChatBot AI",
@@ -142,7 +208,8 @@ export const locale = {
             "Write unit and E2E tests.",
             "Debug and update chatbot logic."
           ],
-          "technologies": ["Typescript", "OpenAI", "Langchain", "Nextjs", "Pinecone", "Vector DB", "Chroma", "Docker"]
+          "technologies": ["Typescript", "OpenAI", "Langchain", "Nextjs", "Pinecone", "Vector DB", "Chroma", "Docker"],
+          "demo": []
         },
         {
           "project": "Micro FE",
@@ -156,7 +223,8 @@ export const locale = {
             "Write clean, maintainable code.",
             "Write unit and integration tests."
           ],
-          "technologies": ["Typescript", "Angular 12", "Material UI", "Angular-architects"]
+          "technologies": ["Typescript", "Angular 12", "Material UI", "Angular-architects"],
+          "demo": []
         },
         {
           "project": "NPM Chat Library",
@@ -169,7 +237,8 @@ export const locale = {
             "Use GPT technology for chat UX.",
             "Write tests and documentation."
           ],
-          "technologies": ["Typescript", "JavaScript", "NPM", "Angular lib"]
+          "technologies": ["Typescript", "JavaScript", "NPM", "Angular lib"],
+          "demo": ["https://github.com/thananhtuan2011/LibChatBox"]
         },
         {
           "project": "Jeeplatform Chat, Team, Work App",
@@ -183,7 +252,8 @@ export const locale = {
             "Add media sharing, tagging, and encryption.",
             "Write and test front-end code."
           ],
-          "technologies": ["Typescript", "Angular 11", "Material UI", "Websocket", "SQL Server"]
+          "technologies": ["Typescript", "Angular 11", "Material UI", "Websocket", "SQL Server"],
+          "demo": [" https://app.jee.vn"]
         },
         {
           "project": "Electron Desktop App",
@@ -196,7 +266,8 @@ export const locale = {
             "Implement auto-update and system integration.",
             "Write and test cross-platform code."
           ],
-          "technologies": ["Typescript", "Angular 11", "Electronjs", "Electron builder", "Nodejs", "Material UI"]
+          "technologies": ["Typescript", "Angular 11", "Electronjs", "Electron builder", "Nodejs", "Material UI"],
+          "demo": []
         },
         {
           "project": "Internal Social Network",
@@ -209,7 +280,8 @@ export const locale = {
             "Integrate chat, notifications, and file sharing.",
             "Write and maintain frontend logic and documentation."
           ],
-          "technologies": ["Typescript", "Angular 12", "Material UI", "SignalR", "SQL Server", ".NET"]
+          "technologies": ["Typescript", "Angular 12", "Material UI", "SignalR", "SQL Server", ".NET"],
+          "demo": []
         }
       ],
 

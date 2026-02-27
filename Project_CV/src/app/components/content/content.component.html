@@ -92,60 +92,42 @@
       <p><span style="  color: #333;
           font-weight: 500;">Technologies:</span> {{ exp.technologies.join(', ')
         }}</p>
+      <p>
+        <div *ngIf="exp?.demo.length > 0">
 
-    </div>
-
-  </section>
-
-  <section class="section portfolio-section">
-    <h2 class="section-title">
-      <span class="icon-holder"><i class="fas fa-th-large"></i></span>
-      Portfolio
-    </h2>
-    <div class="portfolio-content">
-      <div class="row">
-        <div class="col-xl-6"
-          *ngFor="let item of portfolio | paginate: { itemsPerPage: 4, currentPage: p }">
-          <div class="portfolio-item"
-            (click)="openModal('custom-modal-1',item.url)">
-            <video src="{{item.url}}"></video>
-            <!-- <img src="{{item.covers['404']}}" alt="{{item.name}}"> -->
-            <div class="details">
-              <h4>{{item.name}}</h4>
-              <!-- <div class="stats">
-                <ul class="list-unstyled">
-                  <li><i class="far fa-eye"></i> {{item.stats.views}}</li>
-                  <li><i class="far fa-thumbs-up"></i> {{item.stats.appreciations}}</li>
-                </ul> -->
-              <!-- </div> -->
-              <!-- <div class="tags" *ngIf="item.fields.length">
-                <ul class="list-unstyled">
-                  <li *ngFor="let field of item.fields">{{field}}</li>
-                </ul>
-              </div> -->
-            </div>
-          </div>
+          <span style="  color: #333;
+          font-weight: 500;">Demo:</span>
+          <a *ngFor="let demo of exp.demo;let last=last" style="color: blue;"
+            [href]="demo" target="_blank">
+            {{ demo
+            }}
+            <ng-container *ngIf="!last">,</ng-container>
+          </a>
         </div>
+
+        <div *ngIf="exp.company === 'DPS Solutions'">
+
+          <span style="  color: #333;
+          font-weight: 500;">Account:</span>
+          Tks:dps.tuanta,
+          pass:132152160zZ
+        </div>
+
       </div>
-      <div class="text-center mt-3">
-        <pagination-controls
-          (pageChange)="p = $event"></pagination-controls>
-      </div>
-    </div>
 
-  </section><!--//section-->
+    </section>
 
-</div><!--//main-body-->
+  </div><!--//main-body-->
 
-<jw-modal id="custom-modal-1">
-  <button style="    margin-bottom: 10px;"
-    (click)="closeModal('custom-modal-1');" mat-icon-button
-    color="primary" aria-label="Example icon button with a home icon">
-    <mat-icon>close</mat-icon>
-  </button>
-  <video *ngIf="urlactive" width="100%" height="100%" controls>
-    <source [src]="urlactive" type="video/mp4" />
-  </video>
+  <jw-modal id="custom-modal-1">
+    <button style="    margin-bottom: 10px;"
+      (click)="closeModal('custom-modal-1');" mat-icon-button
+      color="primary" aria-label="Example icon button with a home icon">
+      <mat-icon>close</mat-icon>
+    </button>
+    <video *ngIf="urlactive" width="100%" height="100%" controls>
+      <source [src]="urlactive" type="video/mp4" />
+    </video>
 
-  <!-- <button >Close</button> -->
-</jw-modal>
+    <!-- <button >Close</button> -->
+  </jw-modal>

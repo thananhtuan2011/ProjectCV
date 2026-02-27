@@ -4,7 +4,7 @@ export const locale = {
   data: {
     CV: {
       "name": "Thân Anh Tuấn",
-      "dochieu": "Trung thực",
+      "dochieu": "B1",
       "truong": "Đại học Công nghiệp Thực phẩm TP.HCM",
       "nganh": "Kỹ thuật phần mềm",
       "loai": "Tốt nghiệp loại: Xuất sắc",
@@ -14,7 +14,7 @@ export const locale = {
       "noidung3": "Có kinh nghiệm với đặt vé máy bay cho Vietjet Air và thương mại điện tử",
       "noidung4": "Hơn 1 năm làm việc với Electronjs để xây dựng ứng dụng desktop cho Windows và macOS",
       "noidung5": "Có kinh nghiệm tạo tài liệu thiết kế kiến trúc (thiết kế cơ bản, thiết kế chi tiết, thiết kế dữ liệu, SQL Server, MongoDB, MySQL...)",
-      "noidung6": "Hơn 4 năm kinh nghiệm và kiến thức về HTTP Request (Restful API), .Net",
+      "noidung6": "Hơn 3 năm kinh nghiệm và kiến thức về HTTP Request (Restful API), .Net",
       "noidung7": "Xây dựng chatbot với OpenAI, Gemini",
       "noidung8": "Luôn cập nhật công nghệ mới và tham gia nhiều dự án áp dụng quy trình agile, họp hàng ngày với khách hàng và team onshore để ước lượng và báo cáo công việc.",
       "noidung9": "Tốt nghiệp cử nhân ngành Kỹ thuật phần mềm",
@@ -75,6 +75,52 @@ export const locale = {
       "others_content": "Docker, Kafka, Firebase, WebRTC, Redis, RabbitMQ, SignalR, Websocket, Github, GitLab, Oauth, Azure, Jenkins, Agile/Scrum",
       "experience": [
         {
+          "company": "HTECOM Technology",
+          "position": "FullStack Developer, Booking (Remote FullTime)",
+          "project": "Booking",
+          "duration": "12/2025 - Present",
+          "description": "Hệ thống Đặt Vé Xe Khách là một nền tảng giúp khách hàng tìm kiếm, đặt và thanh toán vé xe trực tuyến một cách nhanh chóng và thuận tiện. Hệ thống cho phép quản lý thời gian thực các tuyến đường, lịch trình, ghế ngồi, giá vé và đơn hàng, giúp các nhà xe tối ưu hóa vận hành và nâng cao trải nghiệm khách hàng. CMS dành cho Admin là hệ thống quản trị trung tâm cho phép quản trị viên quản lý toàn bộ dữ liệu và hoạt động của hệ thống đặt vé, bao gồm tuyến đường, chuyến xe, phương tiện, giá vé, đặt chỗ và người dùng, giúp vận hành hệ thống hiệu quả và chính xác.",
+          "team_size": "6 thành viên",
+          "responsibilities": [
+            "Xây dựng và nâng cấp ứng dụng web sử dụng TypeScript và Angular.",
+            "Triển khai thiết kế responsive và đảm bảo khả năng tương thích đa trình duyệt bằng Bootstrap và PrimeNG UI.",
+            "Thiết kế, phát triển và tối ưu các dịch vụ backend sử dụng .NET Core.",
+            "Xây dựng và quản lý RESTful APIs với PostgreSQL để giao tiếp với frontend và các hệ thống bên ngoài.",
+            "Thiết kế cấu trúc cơ sở dữ liệu bằng PostgreSQL, viết truy vấn hiệu quả và tối ưu hiệu năng hệ thống.",
+            "Tham gia phân tích yêu cầu nghiệp vụ cùng BA và xây dựng tài liệu đặc tả kỹ thuật.",
+            "Triển khai các giải pháp bảo mật, xác thực và phân quyền như JWT và OAuth2.",
+            "Viết code sạch, dễ bảo trì và hiệu quả.",
+            "Liên tục cập nhật và áp dụng các best practices mới nhất trong TypeScript, Angular và Tailwind CSS.",
+            "Theo dõi xu hướng phát triển frontend mới và đề xuất các cải tiến, giải pháp sáng tạo.",
+            "Viết unit test, integration test và end-to-end test để đảm bảo độ ổn định và tin cậy của hệ thống.",
+            "Debug và xử lý lỗi được báo cáo bởi QA và người dùng cuối kịp thời.",
+            "Triển khai quản lý state bằng Angular Signals."
+          ],
+          "technologies": ["TypeScript", "Angular 20", "Tailwind", ".NET 9", "PostgreSQL 16", "RxJS", "PrimeNG UI"],
+          "demo": ["booking-ticket-fe.vercel.app", "https://booking-ticket-cms.vercel.app"]
+        },
+        {
+          "position": "Frontend Developer (Remote FullTime)",
+          "project": "Cơ sở dữ liệu Văn hóa tỉnh Ninh Bình",
+          "duration": "08/2025 - Present",
+          "description": "Cơ sở dữ liệu Văn hóa tỉnh Ninh Bình là hệ thống thông tin tập trung, được xây dựng nhằm lưu trữ, quản lý và khai thác toàn diện dữ liệu liên quan đến di sản văn hóa vật thể và phi vật thể, di tích lịch sử, danh lam thắng cảnh, lễ hội, phong tục tập quán, làng nghề truyền thống và các giá trị văn hóa đặc trưng của địa phương. CMS (Hệ thống quản lý nội dung) của Cổng thông tin được thiết kế để quản lý tập trung toàn bộ nội dung và dữ liệu hiển thị trên website. Hệ thống cho phép quản lý nội dung linh hoạt (thêm, sửa, xóa, cập nhật bài viết, tin tức, sự kiện, hình ảnh, video, tài liệu) và hỗ trợ phân quyền người dùng với nhiều nhóm tài khoản khác nhau như quản trị viên, biên tập viên, cộng tác viên. CMS cũng cho phép quản lý dữ liệu chuyên ngành (di sản, văn hóa, du lịch, chính sách, v.v.) theo cấu trúc chuẩn hóa, tích hợp đa phương tiện (bản đồ, hình ảnh 360°, video clip, thư viện ảnh), cùng với công cụ tìm kiếm và tra cứu nâng cao giúp người dùng dễ dàng tiếp cận thông tin. Ngoài ra, hệ thống có khả năng mở rộng và tích hợp với các nền tảng bên ngoài như API, cơ sở dữ liệu quốc gia hoặc hệ thống du lịch thông minh.",
+          "team_size": "15 thành viên",
+          "responsibilities": [
+            "Thiết kế và phát triển giao diện người dùng bằng TypeScript và Angular v20.",
+            "Đảm bảo giao diện và trải nghiệm người dùng tuân thủ theo thiết kế bằng Tailwind CSS.",
+            "Phát triển các UI components có thể tái sử dụng nhằm tăng hiệu suất phát triển.",
+            "Tích hợp các thành phần frontend với RESTful APIs và các dịch vụ backend khác.",
+            "Phối hợp với backend developer để xác định yêu cầu dữ liệu và đảm bảo luồng dữ liệu thông suốt.",
+            "Viết unit test và tham gia kiểm thử end-to-end để đảm bảo chất lượng và chức năng của hệ thống.",
+            "Tham gia phân tích yêu cầu nghiệp vụ cùng BA và xây dựng tài liệu đặc tả kỹ thuật.",
+            "Triển khai các giải pháp bảo mật, xác thực và phân quyền như JWT và OAuth2.",
+            "Tích hợp hệ thống với các dịch vụ bên thứ ba như Google Maps API.",
+            "Review và tối ưu code để cải thiện hiệu năng và khả năng bảo trì."
+          ],
+          "technologies": ["TypeScript", "Angular 20", "Tailwind", "RxJS", "Ant Design", "Google Maps", "OpenStreetMap"],
+          "demo": ["https://ditich.ninhbinh.gov.vn"]
+        },
+        {
           "company": "Innologiciel",
           "position": "Lập trình viên FullStack (Làm việc từ xa toàn thời gian)",
           "project": "InnoBook",
@@ -109,7 +155,8 @@ export const locale = {
             "Tích hợp frontend với RESTful API và backend.",
             "Viết test và đảm bảo chất lượng code."
           ],
-          "technologies": ["Typescript", "Angular", "Tailwind", "Ant design", "Rxjs"]
+          "technologies": ["Typescript", "Angular", "Tailwind", "Ant design", "Rxjs"],
+          "demo": ["https://skyjoy.vietjetair.com",]
         },
         {
           "company": "DPS Solutions",
@@ -124,7 +171,8 @@ export const locale = {
             "Viết code sạch, dễ bảo trì.",
             "Khắc phục lỗi và xử lý sự cố người dùng."
           ],
-          "technologies": ["Typescript", "Angular 15", "Material UI", "MySQL", "Nodejs"]
+          "technologies": ["Typescript", "Angular 15", "Material UI", "MySQL", "Nodejs"],
+          "demo": ["https://github.com/thananhtuan2011/Contract_Project",]
         },
         {
           "project": "Thương mại điện tử",
@@ -152,7 +200,8 @@ export const locale = {
             "Viết test unit và end-to-end.",
             "Fix bug và cập nhật logic chatbot."
           ],
-          "technologies": ["Typescript", "OpenAI", "Langchain", "Nextjs", "Pinecone", "Vector DB", "Chroma", "Docker"]
+          "technologies": ["Typescript", "OpenAI", "Langchain", "Nextjs", "Pinecone", "Vector DB", "Chroma", "Docker"],
+          "demo": []
         },
         {
           "project": "Micro FE",
@@ -166,7 +215,8 @@ export const locale = {
             "Viết code dễ bảo trì.",
             "Viết unit test và integration test."
           ],
-          "technologies": ["Typescript", "Angular 12", "Material UI", "Angular-architects"]
+          "technologies": ["Typescript", "Angular 12", "Material UI", "Angular-architects"],
+          "demo": []
         },
         {
           "project": "Thư viện Chat NPM",
@@ -179,7 +229,8 @@ export const locale = {
             "Tích hợp công nghệ GPT nâng cao UX.",
             "Viết test và tài liệu sử dụng."
           ],
-          "technologies": ["Typescript", "JavaScript", "NPM", "Angular lib"]
+          "technologies": ["Typescript", "JavaScript", "NPM", "Angular lib"],
+          "demo": ["https://github.com/thananhtuan2011/LibChatBox"]
         },
         {
           "project": "Ứng dụng chat, team, công việc Jeeplatform",
@@ -193,7 +244,8 @@ export const locale = {
             "Hỗ trợ chia sẻ media, tag và mã hóa.",
             "Viết mã frontend và thực hiện test."
           ],
-          "technologies": ["Typescript", "Angular 11", "Material UI", "Websocket", "SQL Server"]
+          "technologies": ["Typescript", "Angular 11", "Material UI", "Websocket", "SQL Server"],
+          "demo": []
         },
         {
           "project": "Ứng dụng Desktop Electron",
@@ -206,7 +258,8 @@ export const locale = {
             "Tích hợp tính năng tự cập nhật và khởi động cùng hệ thống.",
             "Viết mã tương thích đa nền tảng và test kỹ."
           ],
-          "technologies": ["Typescript", "Angular 11", "Electronjs", "Electron builder", "Nodejs", "Material UI"]
+          "technologies": ["Typescript", "Angular 11", "Electronjs", "Electron builder", "Nodejs", "Material UI"],
+          "demo": []
         },
         {
           "project": "Mạng xã hội nội bộ",
@@ -219,7 +272,8 @@ export const locale = {
             "Tích hợp chat, thông báo và chia sẻ tài liệu.",
             "Viết và duy trì mã frontend và tài liệu."
           ],
-          "technologies": ["Typescript", "Angular 12", "Material UI", "SignalR", "SQL Server", ".NET"]
+          "technologies": ["Typescript", "Angular 12", "Material UI", "SignalR", "SQL Server", ".NET"],
+          "demo": []
         }
       ]
     },
