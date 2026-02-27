@@ -1,53 +1,59 @@
 <div class="sidebar-wrapper">
   <div style="    position: relative;
-  right: 0px;"> 
+  right: 0px;">
     <app-language-selector style="margin-top: 10px"></app-language-selector>
-  <div class="profile-container">
- 
-    <img class="profile" src="assets/images/avatar.jpg" alt="Abdo Hamoud">
-    <h1 class="name">{{'CV.name' | translate}}</h1>
-    <h3 class="tagline">{{myJob}}</h3>
-  </div><!--//profile-container-->
-  <div class="contact-container container-block">
-    <ul class="list-unstyled contact-list">
-      <li class="email">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:{{contactDetails.email}}">{{contactDetails.email}}</a>
-      </li>
-      <li class="phone">
-        <i class="fas fa-phone"></i>
-        <a href="tel:{{contactDetails.phone}}">{{contactDetails.phone}}</a>
-      </li>
-      <li class="behance">
-        <i class='fab fa-facebook-f'></i>
-        <a href="{{contactDetails.facebook}}" target="_blank">Fackbook</a>
-      </li>
-      <li class="github">
-        <i class="fab fa-github"></i>
-        <a href="{{contactDetails.github}}" target="_blank">Github</a>
-      </li>
-      <li class="github">
-        <i class="fab fa-skype"></i>
-        <a href="javascript:;" >live:.cid.489b2ea999100079</a>
-      </li>
-     <li class="linkedin">
-        <i class="fab fa-linkedin-in"></i>
-        <a href="{{contactDetails.linkedin}}" target="_blank">Linkedin</a>
-      </li>
-    </ul>
-  </div><!--//contact-container-->
+    <div class="profile-container">
 
-  <div class="education-container container-block">
-    <h2 class="container-block-title">Education</h2>
-    <div class="item">
-      <h5>{{'CV.truong' | translate}}</h5>
-      <h4 class="degree">{{'CV.nganh' | translate}}</h4>
-      <h5 class="degree">{{'CV.loai' | translate}}</h5>
-      <div class="degree">2017 – 2021</div>
-    </div><!--//item-->
-  </div><!--//education-container-->
+      <img class="profile" src="assets/images/avatar.jpg" alt="Abdo Hamoud">
+      <h1 class="name">{{'CV.name' | translate}}</h1>
+      <h3 class="tagline">{{myJob}}</h3>
+      <a class="download-cv" href="assets/media/THÂN-ANH-TUẤN-CV.pdf" download
+        title="Download CV"
+        style="display:inline-block;margin-left:8px;color:inherit;text-decoration:none;">
+        <i class="fas fa-download"></i>
+        <span style="margin-left:6px;">Download CV</span>
+      </a>
+    </div><!--//profile-container-->
+    <div class="contact-container container-block">
+      <ul class="list-unstyled contact-list">
+        <li class="email">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:{{contactDetails.email}}">{{contactDetails.email}}</a>
+        </li>
+        <li class="phone">
+          <i class="fas fa-phone"></i>
+          <a href="tel:{{contactDetails.phone}}">{{contactDetails.phone}}</a>
+        </li>
+        <li class="behance">
+          <i class='fab fa-facebook-f'></i>
+          <a href="{{contactDetails.facebook}}" target="_blank">Fackbook</a>
+        </li>
+        <li class="github">
+          <i class="fab fa-github"></i>
+          <a href="{{contactDetails.github}}" target="_blank">Github</a>
+        </li>
+        <li class="github">
+          <i class="fab fa-skype"></i>
+          <a href="javascript:;">live:.cid.489b2ea999100079</a>
+        </li>
+        <li class="linkedin">
+          <i class="fab fa-linkedin-in"></i>
+          <a href="{{contactDetails.linkedin}}" target="_blank">Linkedin</a>
+        </li>
+      </ul>
+    </div><!--//contact-container-->
 
-  <!-- <div class="education-container container-block">
+    <div class="education-container container-block">
+      <h2 class="container-block-title">Education</h2>
+      <div class="item">
+        <h5>{{'CV.truong' | translate}}</h5>
+        <h4 class="degree">{{'CV.nganh' | translate}}</h4>
+        <h5 class="degree">{{'CV.loai' | translate}}</h5>
+        <div class="degree">2017 – 2021</div>
+      </div><!--//item-->
+    </div><!--//education-container-->
+
+    <!-- <div class="education-container container-block">
     <h2 class="container-block-title">Awards</h2>
     <div class="item">
       <h4 class="degree">Egyptian Ministry
@@ -58,39 +64,40 @@
     </div>
   </div> -->
 
-  <div class="languages-container container-block">
-    <h2 class="container-block-title">Languages</h2>
-    <ul class="list-unstyled interests-list">
-      <li>English : <span class="lang-desc">  {{'CV.dochieu' | translate}}</span></li>
-    </ul>
-  </div><!--//interests-->
+    <div class="languages-container container-block">
+      <h2 class="container-block-title">Languages</h2>
+      <ul class="list-unstyled interests-list">
+        <li>English : <span class="lang-desc"> {{'CV.dochieu' |
+            translate}}</span></li>
+      </ul>
+    </div><!--//interests-->
 
-  <div class="interests-container container-block">
-    <h2 class="container-block-title">Technical Skills</h2>
-    <ul class="list-unstyled interests-list">
-      <li>HTML</li>
-      <li>CSS ( LESS , SCSS )</li>
-      <li>Tailwind CSS</li>
-      <li>Javascript</li>
-      <li>Typescript</li>
-      <li>Nestjs</li>
-      <li>Angular +</li>
-      <li>Docker</li>
-      <li>Kafka</li>
-      <li>Nodejs</li>
-      <li>HTTP Request (Restful API)</li>
-      <li>React Native</li>
-      <li>Electronjs</li>
-      <li>MongoDB</li>
-      <li>NET Core</li>
-      <li>SQL Server</li>
-      <li>Firebase</li>
-      <li>WebRTC</li>
-      <li>Redis</li>
-      <li>RabbitMQ</li>
-      <li>Github</li>
-      <li>GitLab</li>
-    </ul>
-  </div><!--//interests-->
+    <div class="interests-container container-block">
+      <h2 class="container-block-title">Technical Skills</h2>
+      <ul class="list-unstyled interests-list">
+        <li>HTML</li>
+        <li>CSS ( LESS , SCSS )</li>
+        <li>Tailwind CSS</li>
+        <li>Javascript</li>
+        <li>Typescript</li>
+        <li>Nestjs</li>
+        <li>Angular +</li>
+        <li>Docker</li>
+        <li>Kafka</li>
+        <li>Nodejs</li>
+        <li>HTTP Request (Restful API)</li>
+        <li>React Native</li>
+        <li>Electronjs</li>
+        <li>MongoDB</li>
+        <li>NET Core</li>
+        <li>SQL Server</li>
+        <li>Firebase</li>
+        <li>WebRTC</li>
+        <li>Redis</li>
+        <li>RabbitMQ</li>
+        <li>Github</li>
+        <li>GitLab</li>
+      </ul>
+    </div><!--//interests-->
 
-</div><!--//sidebar-wrapper-->
+  </div><!--//sidebar-wrapper-->
